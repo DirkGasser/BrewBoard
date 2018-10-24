@@ -65,7 +65,7 @@ U 1 1 5B955985
 P 8650 6450
 F 0 "J4" H 8650 6650 50  0000 C CNN
 F 1 "Conn_01x03" H 8650 6250 50  0000 C CNN
-F 2 "RasperryLib:Conn_Small1x3" H 8650 6450 50  0001 C CNN
+F 2 "RasperryLib:Connector1x3" H 8650 6450 50  0001 C CNN
 F 3 "" H 8650 6450 50  0001 C CNN
 	1    8650 6450
 	0    1    1    0   
@@ -76,7 +76,7 @@ U 1 1 5B9559AD
 P 10850 5750
 F 0 "J5" H 10850 5950 50  0000 C CNN
 F 1 "Conn_01x03" H 10850 5550 50  0000 C CNN
-F 2 "RasperryLib:Conn_Small1x3" H 10850 5750 50  0001 C CNN
+F 2 "RasperryLib:Connector1x3" H 10850 5750 50  0001 C CNN
 F 3 "" H 10850 5750 50  0001 C CNN
 	1    10850 5750
 	1    0    0    -1  
@@ -345,6 +345,28 @@ F 3 "" H 9900 3250 60  0001 C CNN
 	1    9900 3250
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Wire W2
+U 1 1 5BB4FD8F
+P 5000 3350
+F 0 "W2" H 5000 3200 60  0000 C CNN
+F 1 "Wire" H 5000 3500 60  0000 C CNN
+F 2 "RasperryLib:Wire_Short" H 5000 3350 60  0001 C CNN
+F 3 "" H 5000 3350 60  0001 C CNN
+	1    5000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Wire W3
+U 1 1 5BD0BFBD
+P 4900 3700
+F 0 "W3" H 4900 3550 60  0000 C CNN
+F 1 "Wire" H 4900 3850 60  0000 C CNN
+F 2 "RasperryLib:Wire_long" H 4900 3700 60  0001 C CNN
+F 3 "" H 4900 3700 60  0001 C CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3800 1300 3950 1300
 Connection ~ 3800 1550
@@ -367,7 +389,7 @@ Wire Wire Line
 	9350 4100 9400 4100
 Connection ~ 9350 4100
 Wire Wire Line
-	5300 3700 7950 3700
+	5150 3700 7950 3700
 Wire Wire Line
 	8750 6250 10550 6250
 Wire Wire Line
@@ -740,17 +762,6 @@ Connection ~ 9350 3000
 Wire Wire Line
 	9850 5200 9850 4100
 Connection ~ 9900 4100
-$Comp
-L Wire W2
-U 1 1 5BB4FD8F
-P 5000 3350
-F 0 "W2" H 5000 3200 60  0000 C CNN
-F 1 "Wire" H 5000 3500 60  0000 C CNN
-F 2 "RasperryLib:Wire_Short" H 5000 3350 60  0001 C CNN
-F 3 "" H 5000 3350 60  0001 C CNN
-	1    5000 3350
-	0    -1   -1   0   
-$EndComp
 Connection ~ 5000 3100
 Wire Wire Line
 	5300 5400 5450 5400
@@ -758,4 +769,11 @@ Wire Wire Line
 	5450 5400 5450 3600
 Wire Wire Line
 	5450 3600 5000 3600
+Wire Wire Line
+	3800 3250 3700 3250
+Wire Wire Line
+	3700 3250 3700 3700
+Wire Wire Line
+	3700 3700 4650 3700
+Connection ~ 5300 3700
 $EndSCHEMATC
