@@ -126,17 +126,6 @@ F 3 "" H 10050 6300 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Relais-RESCUE-Raspberry RL1
-U 1 1 5B956127
-P 11100 5350
-F 0 "RL1" H 10650 4300 60  0000 C CNN
-F 1 "Relais" H 10600 5350 60  0000 C CNN
-F 2 "RasperryLib:Relais" H 11100 5350 60  0001 C CNN
-F 3 "" H 11100 5350 60  0001 C CNN
-	1    11100 5350
-	0    1    1    0   
-$EndComp
-$Comp
 L R R1
 U 1 1 5B95D35F
 P 3150 7350
@@ -367,6 +356,17 @@ F 3 "" H 4900 3700 60  0001 C CNN
 	1    4900 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Relais RL1
+U 1 1 5BD373A7
+P 10600 4900
+F 0 "RL1" H 10600 4350 60  0000 C CNN
+F 1 "Relais" H 10550 5400 60  0000 C CNN
+F 2 "RasperryLib:Relais" H 11050 5400 60  0001 C CNN
+F 3 "" H 11050 5400 60  0001 C CNN
+	1    10600 4900
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	3800 1300 3950 1300
 Connection ~ 3800 1550
@@ -438,19 +438,15 @@ Wire Wire Line
 	10250 3000 10250 4200
 Connection ~ 10250 4100
 Wire Wire Line
-	6350 5200 9850 5200
-Wire Wire Line
-	6350 5200 6350 5550
-Wire Wire Line
 	6350 5950 6350 6150
 Wire Wire Line
 	3200 1550 3400 1550
 Wire Wire Line
 	4700 2900 4700 2200
 Wire Wire Line
-	4000 2200 4700 2200
+	4700 2200 4000 2200
 Wire Wire Line
-	4000 1300 4000 2200
+	4000 2200 4000 1300
 Wire Wire Line
 	4000 1300 4050 1300
 Connection ~ 4000 1850
@@ -499,9 +495,9 @@ Connection ~ 9650 3200
 Wire Wire Line
 	10700 2500 10300 2500
 Wire Wire Line
-	10300 3200 10300 2500
+	10300 2500 10300 3200
 Wire Wire Line
-	4700 3200 10300 3200
+	10300 3200 4700 3200
 Wire Wire Line
 	7850 3450 7850 2200
 Wire Wire Line
@@ -776,4 +772,11 @@ Wire Wire Line
 Wire Wire Line
 	3700 3700 4650 3700
 Connection ~ 5300 3700
+Connection ~ 6350 3700
+Wire Wire Line
+	4650 3700 4650 3800
+Wire Wire Line
+	4650 3800 6350 3800
+Wire Wire Line
+	6350 3800 6350 5550
 $EndSCHEMATC
