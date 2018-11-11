@@ -1,4 +1,4 @@
-update=30.09.2018 17:21:02
+update=07.11.2018 18:14:13
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -73,3 +71,5 @@ LibName31=atmel
 LibName32=contrib
 LibName33=valves
 LibName34=C:/Users/dirkg/Documents/Raspi/RasperryLib/j8headerDirk
+[general]
+version=1
